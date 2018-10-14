@@ -1,0 +1,73 @@
+name: EmoteMe
+main: me.noeffort.emoteme.Main
+author: NoEffort
+version: 0.2.1
+commands:
+  hug:
+    description: Hugs selected user.
+    usage: "Usage: /<command> [player]"
+    permission: emoteme.hug
+  slap:
+    description: Slaps selected user.
+    usage: "Usage: /<command> [player]"
+    permission: emoteme.slap
+  punch:
+    description: Punches selected user.
+    usage: "Usage: /<command> [player]"
+    permission: emoteme.punch
+  facepalm:
+    description: You will facepalm.
+    usage: "Usage: /<command>"
+    permission: emoteme.facepalm
+  hugall:
+    description: Hug all online players.
+    usage: "Usage: /<command>"
+    permission: emoteme.players.all
+  handshake:
+    description: Have a handshake with selected user.
+    usage: "Usage: /<command> [player]"
+    permission: emoteme.handshake
+  boop:
+    description: Boop selected user.
+    usage: "Usage: /<command> [player]"
+    permission: emoteme.boop
+  reload:
+    description: Reloads all configuration files.
+    usage: "Usage: /<command>"
+    
+permissions:
+  emoteme.*:
+    description: Access to all EmoteMe commands.
+    children:
+      emoteme.hug: true
+      emoteme.slap: true
+      emoteme.punch: true
+      emoteme.facepalm: true
+      emoteme.bypass.cooldown: true
+      emoteme.players.all: true
+      emoteme.handshake: true
+      emoteme.boop: true
+  emoteme.hug:
+    description: Hug another player
+    default: true
+  emoteme.slap:
+    description: Slap another player
+    default: false
+  emoteme.punch:
+    description: Punch another player.
+    default: false
+  emoteme.facepalm:
+    description: Facepalm.
+    default: true
+  emoteme.bypass.cooldown:
+    description: Ignore all cooldowns.
+    default: false
+  emoteme.players.all:
+    description: Tag all players in a hug.
+    default: false
+  emoteme.handshake:
+    description: Handshake another player.
+    default: true
+  emoteme.boop:
+    description: Boop another player.
+    default: true
