@@ -1,2 +1,3 @@
 # EmoteMe
-Chat based emoticons / emotions.
+
+Ready for release, no known bugs.
